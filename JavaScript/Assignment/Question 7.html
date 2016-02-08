@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 7</title>
+	<script type="text/javascript">
+    function changeColor()
+    {
+    	color = document.getElementById("hover").style.backgroundColor;
+    	document.getElementById("hover").style.backgroundColor = "green";
+    }
+    function restoreColor()
+    {
+          document.getElementById("hover").style.backgroundColor = color;
+    }
+	</script>
+</head>
+<body>
+<div id="hover" style="background-color:red;border:black solid 5px;padding:50px;width:300px;height:300px;" onmouseover="changeColor()" onmouseout="restoreColor()">
+<p>Hover your mouse to change color</p>	
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+alert("This HTML document has an external JavaScript");

@@ -1,0 +1,72 @@
+body{
+    background: #f88107;
+    overflow:auto;
+}
+
+#header{
+    color:#32cd32;
+    font-family: sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+
+#beneath-header{
+    color:white;
+    font-family: 'oswald',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#circle-button{
+    background: #f88107;
+    color:white;
+    font-size: 16px;
+    height: 100px;
+    width:100px;
+    border:3px solid white;
+    border-radius: 50%;
+}
+
+input{
+    margin:10px;
+    color:white;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    border:3px solid white;
+    background: #f88107;
+    font-weight: bold;
+}
+
+#submit-button{
+    background: #32cd32;
+    border:5px solid #32cd32;
+}
+
+#footer{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    whit;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    white;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    white;
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color:    white;
+}
