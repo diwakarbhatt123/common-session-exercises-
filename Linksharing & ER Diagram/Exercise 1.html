@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Posts</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Navigation Bar -->
+<!-- ********************************************************* -->
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	 <div class="navbar-header">
+	 	<a class = "navbar-brand "href="#">Link Sharing</a>
+	 </div>
+	 <!-- Search Bar -->
+	 <ul class="nav navbar-nav navbar-right">
+	 	<li>
+	 	<form class="navbar-form">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
+        </li>
+        <li><a class="glyphicon glyphicon-link" style="color:white;font-size:30px; padding-top:14px;" href="#" data-toggle="modal" data-target="#sharelink"></a></li>
+        <li><a class="glyphicon glyphicon-file" style="color:white;font-size:30px; padding-top:14px;" href="#" data-toggle="modal" data-target="#sharedocument"></a></li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Diwakar Bhatt <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Users</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Topics</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Posts</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </li>
+	 </ul>
+	</div>
+</nav>
+<!-- Row 1 -->
+<!-- *************************************************** -->
+<div class="container">
+<div class="row">
+<div class="col-xs-6">
+<!-- Name Panel -->
+<!-- ************************************************** -->
+<div class="panel panel-default">
+<div class="panel-body">
+	<div>
+			<div class="col-xs-2">
+			<div class="glyphicon glyphicon-user" style="font-size:80px"></div>
+		</div>
+		<div class="col-xs-10">
+		    <div class="row" style="padding-bottom:5px">
+		    <div class="col-xs-6">
+			<span class="h5">Diwakar Bhatt</span>
+			</div>
+			<div class="col-xs-3">
+			</div>
+			<div class="col-xs-3">
+			<a href="#" class="text-left">Grails</a>
+		    </div>
+		</div>
+		<div class="row" style="padding-bottom:10px">
+		<div class="col-xs-4">
+		<small class="text-muted">@diwakarbhatt</small>	
+		</div>
+		<div class="col-xs-2"></div>
+		<div class="col-xs-6 text-muted">9:21 AM 10 February 2016</div>	
+		</div>
+		<div class="row" style="padding-bottom:15px">
+		<div class="col-xs-8"></div>
+		<div class="col-xs-4">
+		<select class="form-control" id="sel1">
+		<option>1 Star</option>
+		<option>2 Star</option>
+		<option>3 Star</option>
+		<option>4 Star</option>
+		<option>5 Star</option>	
+		</select>	
+		</div>	
+		</div>
+		</div>
+		<p style="padding-bottom:5px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi risus, mollis sit amet purus vitae, rutrum commodo erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi risus, mollis sit amet purus vitae, rutrum commodo erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi risus, mollis sit amet purus vitae, rutrum commodo erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi risus, mollis sit amet purus vitae, rutrum commodo erat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi risus, mollis sit amet purus vitae, rutrum commodo erat.</p>
+		<div class="row">
+		<div class="col-xs-1 fa fa-facebook-official" style="font-size:20px"></div>
+		<div class="col-xs-1 fa fa-twitter" style="font-size:20px"></div>
+		<div class="col-xs-1 fa fa-google-plus" style="font-size:20px"></div>
+		<div class="col-xs-6"></div>
+		<div class="col-xs-3"><a href="#">View Post</a></div>	
+		</div>
+		</div>
+		
+	</div>
+</div>	
+</div>
+<div class="col-xs-6">
+<!-- Trending Topics Panel -->
+<!-- ************************************************ -->
+<div class="panel panel-default">
+	<div class="panel-heading"><strong>Trending Topics</strong></div>
+	<div class="panel-body">
+			<div>
+			<div class="col-xs-2">
+			<div class="glyphicon glyphicon-user" style="font-size:60px"></div>
+		</div>
+		<div class="col-xs-10">
+		    <div class="row">
+		    <div class="col-xs-6">
+			<span class="h5">Diwakar Bhatt</span>
+			<small class="text-muted">@diwakarbhatt</small>
+			</div>
+			<div class="col-xs-3">
+			</div>
+			<div class="col-xs-3">
+			<a href="#" class="text-left">Grails</a>
+		    </div>
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi risus, mollis sit amet purus vitae, rutrum commodo erat.</p>
+		<div class="row" style="padding-bottom:10px">
+		<div class="col-xs-1 fa fa-facebook-official"></div>
+		<div class="col-xs-1 fa fa-twitter"></div>
+		<div class="col-xs-1 fa fa-google-plus"></div>
+		<div class="col-xs-6"></div>
+		<div class="col-xs-3"><a href="#">View Post</a></div>	
+		</div>
+		</div>
+		</div>
+		<div>
+			<div class="col-xs-2">
+			<div class="glyphicon glyphicon-user" style="font-size:60px"></div>
+		</div>
+		<div class="col-xs-10">
+		    <div class="row">
+		    <div class="col-xs-6">
+			<span class="h5">Diwakar Bhatt</span>
+			<small class="text-muted">@diwakarbhatt</small>
+			</div>
+			<div class="col-xs-3">
+			</div>
+			<div class="col-xs-3">
+			<a href="#" class="text-left">Grails</a>
+		    </div>
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mi risus, mollis sit amet purus vitae, rutrum commodo erat.</p>
+		<div class="row">
+		<div class="col-xs-4">
+		<select class="form-control" id="sel1">
+		<option>Serious</option>
+		<option>Very Serious</option>	
+		</select>	
+		</div>
+		<div class="col-xs-4">
+		<select class="form-control" id="sel1">
+		<option>Public</option>
+		<option>Private</option>	
+		</select>	
+		</div>
+		<div class="col-xs-2"><a href="#">Edit</a></div>
+		<div class="col-xs-2"><a href="#">Delete</a></div>
+		</div>
+		</div>
+		</div>
+	</div>
+</div>	
+</div>
+</body>
+</html>
