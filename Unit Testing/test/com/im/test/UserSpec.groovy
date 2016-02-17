@@ -75,15 +75,12 @@ class UserSpec extends Specification {
         User user = new User()
         def mockedPasswordEncrypterService = Mock(PasswordEncrypterService)
         user.passwordEncrypterService = mockedPasswordEncrypterService
-        String result = mockedPasswordEncrypterService.encrypt(_ as String)
+        mockedPasswordEncrypterService.encrypt(_ as String) >> "temppass"
         when:
-        String output = user.encyryptPassword(password)
+        String output = user.encyryptPassword("abcd1234")
 
         then:
-        output == result
-
-        where:
-        password << ["abcd", "abcdefgh"]
+        output == "temppass"
 
     }
 
@@ -98,12 +95,11 @@ class UserSpec extends Specification {
         user.resetPasswordAndSendEmail()
 
         then:
-        1 * mockEmailService.sendCancellationEmail(user,_ as String)
-        user.password !="dummy"
+        1 * mockEmailService.sendCancellationEmail(user, _ as String)
+        user.password != "dummy"
     }
 
-    void "Product Purchased"()
-    {
+    void "Product Purchased"() {
         setup:
         Product product = new Product()
         User user = new User()
@@ -112,11 +108,11 @@ class UserSpec extends Specification {
         user.purchase(product)
 
         then:
-        user.purchasedProducts.size()>0
+        user.purchasedProducts.size() > 0
 
     }
-    void "Product Cancelled"()
-    {
+
+    void "Product Cancelled"() {
         setup:
         Product product = new Product()
         User user = new User()
